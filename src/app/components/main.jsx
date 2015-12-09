@@ -9,7 +9,6 @@ const gridInstance = React.createClass({
       textAlign: 'center',
     };
       return (
-        <Grid>
           <Row className="show-grid">
             <Col xs={1} sm={1} md={1} lg={1} style={border}>1</Col>
             <Col xs={1} sm={1} md={1} lg={1} style={border}>1</Col>
@@ -44,7 +43,6 @@ const gridInstance = React.createClass({
           <Row className="show-grid">
             <Col xs={12} sm={12} md={12} lg={12} style={border}>12</Col>
           </Row>
-        </Grid>
       )
     }
 });
