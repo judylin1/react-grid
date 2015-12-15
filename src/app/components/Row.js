@@ -1,10 +1,25 @@
+'use strict';
+
 var React = require('react');
 
 var Row = React.createClass({
-  render: function() {
+  //used for debugging
+  displayName: 'Row',
+
+  //in case value not specified by parent component
+  getDefaultProps: function getDefaultProps() {
+    return {
+      componentClass: 'div'
+    };
+  },
+
+  render: function render() {
+    var ComponentClass = this.props.componentClass;
+
     return React.createElement(
-      'div',
-      this.props
+      ComponentClass,
+      this.props,
+      this.props.children
     );
   }
 });

@@ -45,6 +45,19 @@ const gridInstance = React.createClass({
           <Row>
             <Col xs={12} sm={12} md={12} lg={12} style={border}>12</Col>
           </Row>
+
+          <Row>
+            <Col xs={6} xsPush={6} style={border}>Push 6</Col>
+          </Row>
+
+          <Row>
+            <Col xs={6} xsPull={6} style={border}>Pull 6</Col>
+          </Row>
+
+          <Row>
+            <Col xs={6} xsOffset={6} style={border}>Offset 6</Col>
+          </Row>
+
         </div>
       )
     }
